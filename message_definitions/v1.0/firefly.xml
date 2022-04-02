@@ -5487,6 +5487,19 @@
     <message id="13001" name="FIREFLY_GET_FRAME">
       <description>Command perception node to extract frame and pass it on for segmentation</description>
       <field type="uint8_t" name="get_frame">Boolean to decide whether to extract frame (1) or not (0)</field>
+    <message id="13002" name="FIREFLY_CLEAR_MAP"> 
+      <description>Command to clear the current occupancy grid map</description>
+      <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
+    </message>
+    <message id="13003" name="FIREFLY_SET_LOCAL_POS_REF">
+      <description>Set the local position reference to the current pose of the drone</description>
+      <field type="uint8_t" name="get_frame">Empty byte since mavlink requires a non-zero payload</field>
+    </message>
+    <message id="13004" name="FIREFLY_LOCAL_POS_REF">
+      <description>The GPS coordinates of the local position reference </description>
+      <field type="double" name="latitude">Latitude of local position reference</field>
+      <field type="double" name="longitude">Longitude of local position reference</field>
+      <field type="double" name="altitude">Altitude of local position reference above the WGS 84 ellipsoid</field>
     </message>
   </messages>
 </mavlink>
