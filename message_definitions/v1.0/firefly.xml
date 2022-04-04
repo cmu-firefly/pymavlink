@@ -5487,6 +5487,7 @@
     <message id="13001" name="FIREFLY_GET_FRAME">
       <description>Command perception node to extract frame and pass it on for segmentation</description>
       <field type="uint8_t" name="get_frame">Boolean to decide whether to extract frame (1) or not (0)</field>
+    </message>
     <message id="13002" name="FIREFLY_CLEAR_MAP"> 
       <description>Command to clear the current occupancy grid map</description>
       <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
