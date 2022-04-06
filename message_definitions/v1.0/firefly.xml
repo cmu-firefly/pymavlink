@@ -5502,5 +5502,9 @@
       <field type="double" name="longitude">Longitude of local position reference</field>
       <field type="double" name="altitude">Altitude of local position reference above the WGS 84 ellipsoid</field>
     </message>
+    <message id="13005" name="FIREFLY_HEARTBEAT">
+      <description>Heartbeat to determine connection status</description>
+      <field type="uint8_t" name="get_frame">Empty byte since mavlink requires a non-zero payload</field>
+    </message>
   </messages>
 </mavlink>
