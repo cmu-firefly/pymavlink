@@ -5506,5 +5506,9 @@
       <description>Heartbeat to determine connection status</description>
       <field type="uint8_t" name="get_frame">Empty byte since mavlink requires a non-zero payload</field>
     </message>
+    <message id="13006" name="FIREFLY_RECORD_BAG">
+      <description>Message type to start ros bag recording</description>
+      <field type="uint8_t" name="get_frame">Boolean to decide whether to start recording (1) or not (0)</field>
+    </message>
   </messages>
 </mavlink>
