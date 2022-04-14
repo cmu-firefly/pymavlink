@@ -5514,13 +5514,13 @@
       <description>Message for sending new fire bin map updates to the GCS</description>
       <field type="uint8_t" name="seq_num">Sequence Number</field>
       <field type="uint8_t" name="payload_length">Length of the data transported in payload</field>
-      <field type="uint8_t[126]" name="payload">Array of 3 byte bins</field>
+      <field type="uint8_t[60]" name="payload">Array of 3 byte bins</field>
     </message>
     <message id="13008" name="FIREFLY_NEW_NO_FIRE_BINS">
       <description>Message for sending new no fire bin map updates to the GCS</description>
       <field type="uint8_t" name="seq_num">Sequence Number</field>
       <field type="uint8_t" name="payload_length">Length of the data transported in payload</field>
-      <field type="uint8_t[126]" name="payload">Array of 3 byte bins</field>
+      <field type="uint8_t[60]" name="payload">Array of 3 byte bins</field>
     </message>
     <message id="13009" name="FIREFLY_MAP_ACK">
       <description>Acknowledge receipt of new fire bins or new no fire bins message</description>
