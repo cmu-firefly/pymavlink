@@ -5510,5 +5510,13 @@
       <description>Message type to start ros bag recording</description>
       <field type="uint8_t" name="get_frame">Boolean to decide whether to start recording (1) or not (0)</field>
     </message>
+     <message id="13007" name="FIREFLY_BATTERY_STATUS">
+      <description>Message type to transmit battery status over telemetry</description>
+      <field type="float" name="battery">Integer defining battery value</field>
+    </message>
+     <message id="13008" name="FIREFLY_ONBOARD_TEMP">
+      <description>Message type to transmit the onboard temperature over telemetry</description>
+      <field type="float" name="temp">Integer defining onbaord temperature</field>
+    </message>
   </messages>
 </mavlink>
