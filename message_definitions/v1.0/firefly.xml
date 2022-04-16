@@ -5541,5 +5541,6 @@
      <message id="13012" name="FIREFLY_ONBOARD_TEMP">
       <description>Message type to transmit the onboard temperature over telemetry</description>
       <field type="float" name="temp">Integer defining onbaord temperature</field>
+     </message>
   </messages>
 </mavlink>
