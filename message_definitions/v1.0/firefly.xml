@@ -5494,7 +5494,7 @@
     </message>
     <message id="13003" name="FIREFLY_SET_LOCAL_POS_REF">
       <description>Set the local position reference to the current pose of the drone</description>
-      <field type="uint8_t" name="get_frame">Empty byte since mavlink requires a non-zero payload</field>
+      <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
     </message>
     <message id="13004" name="FIREFLY_LOCAL_POS_REF">
       <description>The GPS coordinates of the local position reference </description>
@@ -5504,19 +5504,42 @@
     </message>
     <message id="13005" name="FIREFLY_HEARTBEAT">
       <description>Heartbeat to determine connection status</description>
-      <field type="uint8_t" name="get_frame">Empty byte since mavlink requires a non-zero payload</field>
+      <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
     </message>
     <message id="13006" name="FIREFLY_RECORD_BAG">
       <description>Message type to start ros bag recording</description>
       <field type="uint8_t" name="get_frame">Boolean to decide whether to start recording (1) or not (0)</field>
     </message>
-     <message id="13007" name="FIREFLY_BATTERY_STATUS">
+    <message id="13007" name="FIREFLY_NEW_FIRE_BINS">
+      <description>Message for sending new fire bin map updates to the GCS</description>
+      <field type="uint8_t" name="seq_num">Sequence Number</field>
+      <field type="uint8_t" name="payload_length">Length of the data transported in payload</field>
+      <field type="uint8_t[60]" name="payload">Array of 3 byte bins</field>
+    </message>
+    <message id="13008" name="FIREFLY_NEW_NO_FIRE_BINS">
+      <description>Message for sending new no fire bin map updates to the GCS</description>
+      <field type="uint8_t" name="seq_num">Sequence Number</field>
+      <field type="uint8_t" name="payload_length">Length of the data transported in payload</field>
+      <field type="uint8_t[60]" name="payload">Array of 3 byte bins</field>
+    </message>
+    <message id="13009" name="FIREFLY_MAP_ACK">
+      <description>Acknowledge receipt of new fire bins or new no fire bins message</description>
+      <field type="uint8_t" name="seq_num">Sequence Number</field>
+    </message>
+    <message id="13010" name="FIREFLY_INIT_TO_NO_FIRE_POSE">
+      <description>All uninitialized map bins within field of view of specified camera pose are labelled as no fire</description>
+      <field type="uint8_t" name="seq_num">Sequence Number</field>
+      <field type="float" name="x" units="m">X Position</field>
+      <field type="float" name="y" units="m">Y Position</field>
+      <field type="float" name="z" units="m">Z Position</field>
+      <field type="float[4]" name="q">Quaternion components, w, x, y, z (1 0 0 0 is the null-rotation)</field> 
+    </message>
+    <message id="13011" name="FIREFLY_BATTERY_STATUS">
       <description>Message type to transmit battery status over telemetry</description>
       <field type="float" name="battery">Integer defining battery value</field>
     </message>
-     <message id="13008" name="FIREFLY_ONBOARD_TEMP">
+     <message id="13012" name="FIREFLY_ONBOARD_TEMP">
       <description>Message type to transmit the onboard temperature over telemetry</description>
       <field type="float" name="temp">Integer defining onbaord temperature</field>
-    </message>
   </messages>
 </mavlink>
