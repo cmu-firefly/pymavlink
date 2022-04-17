@@ -5542,5 +5542,9 @@
       <description>Message type to transmit the onboard temperature over telemetry</description>
       <field type="float" name="temp">Integer defining onbaord temperature</field>
      </message>
+     <message id="13013" name="FIREFLY_ALTITUDE">
+      <description>Message type to transmit the altitude over telemetry</description>
+      <field type="float" name="alt">Integer defining altitude</field>
+     </message>
   </messages>
 </mavlink>
