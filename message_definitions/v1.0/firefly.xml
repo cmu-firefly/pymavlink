@@ -5546,5 +5546,9 @@
       <description>Message type to transmit the altitude over telemetry</description>
       <field type="float" name="alt">Integer defining altitude</field>
      </message>
+      <message id="13014" name="FIREFLY_EXEC_AUTO">
+      <description>Command to begin autonomous flight</description>
+      <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
+     </message>
   </messages>
 </mavlink>
