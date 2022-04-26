@@ -5550,5 +5550,9 @@
       <description>Command to begin autonomous flight</description>
       <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
      </message>
+      <message id="13015" name="FIREFLY_KILL">
+      <description>Command to execute Kill Switch</description>
+      <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
+     </message>
   </messages>
 </mavlink>
