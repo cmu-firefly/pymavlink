@@ -5554,5 +5554,35 @@
       <description>Command to execute Kill Switch</description>
       <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
      </message>
+    </message>
+    <message id="13016" name="FIREFLY_REQUEST_CONTROL">
+      <description>Command to request autonomous control</description>
+      <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
+    </message>
+    </message>
+    <message id="13017" name="FIREFLY_ARM">
+      <description>Command to arm the drone</description>
+      <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
+    </message>
+    </message>
+    <message id="13018" name="FIREFLY_DISARM">
+      <description>Command to disarm the drone</description>
+      <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
+    </message>
+    </message>
+    <message id="13019" name="FIREFLY_TAKEOFF">
+      <description>Command to take off</description>
+      <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
+    </message>
+    </message>
+    <message id="13020" name="FIREFLY_LAND">
+      <description>Command to land</description>
+      <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
+    </message>
+    </message>
+    <message id="13021" name="FIREFLY_TRAJ_CONTROL">
+      <description>Command to toggle trajectory control</description>
+      <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
+    </message>
   </messages>
 </mavlink>
