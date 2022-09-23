@@ -5538,47 +5538,41 @@
       <description>Message type to transmit battery status over telemetry</description>
       <field type="float" name="battery">Integer defining battery value</field>
     </message>
-     <message id="13012" name="FIREFLY_ONBOARD_TEMP">
+    <message id="13012" name="FIREFLY_ONBOARD_TEMP">
       <description>Message type to transmit the onboard temperature over telemetry</description>
       <field type="float" name="temp">Integer defining onbaord temperature</field>
-     </message>
-     <message id="13013" name="FIREFLY_ALTITUDE">
+    </message>
+    <message id="13013" name="FIREFLY_ALTITUDE">
       <description>Message type to transmit the altitude over telemetry</description>
       <field type="float" name="alt">Integer defining altitude</field>
-     </message>
+    </message>
       <message id="13014" name="FIREFLY_EXEC_AUTO">
       <description>Command to begin autonomous flight</description>
       <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
-     </message>
+      </message>
       <message id="13015" name="FIREFLY_KILL">
       <description>Command to execute Kill Switch</description>
       <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
-     </message>
     </message>
     <message id="13016" name="FIREFLY_REQUEST_CONTROL">
       <description>Command to request autonomous control</description>
       <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
     </message>
-    </message>
     <message id="13017" name="FIREFLY_ARM">
       <description>Command to arm the drone</description>
       <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
-    </message>
     </message>
     <message id="13018" name="FIREFLY_DISARM">
       <description>Command to disarm the drone</description>
       <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
     </message>
-    </message>
     <message id="13019" name="FIREFLY_TAKEOFF">
       <description>Command to take off</description>
       <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
     </message>
-    </message>
     <message id="13020" name="FIREFLY_LAND">
       <description>Command to land</description>
       <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
-    </message>
     </message>
     <message id="13021" name="FIREFLY_TRAJ_CONTROL">
       <description>Command to toggle trajectory control</description>
