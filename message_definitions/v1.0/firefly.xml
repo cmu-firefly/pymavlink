@@ -5582,7 +5582,7 @@
       <description>Command to enable coverage planner</description>
       <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
     </message>
-    <message id="13023" name="FIREFLY_IPP">
+    <message id="13023" name="FIREFLY_IPP_PLANNER">
       <description>Command to enable ipp planner</description>
       <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
     </message>
