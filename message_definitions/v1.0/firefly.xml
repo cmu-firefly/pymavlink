@@ -5578,5 +5578,13 @@
       <description>Command to toggle trajectory control</description>
       <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
     </message>
+    <message id="13022" name="FIREFLY_COVERAGE_PLANNER">
+      <description>Command to enable coverage planner</description>
+      <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
+    </message>
+    <message id="13023" name="FIREFLY_IPP">
+      <description>Command to enable ipp planner</description>
+      <field type="uint8_t" name="empty">Empty byte since mavlink requires a non-zero payload</field>
+    </message>
   </messages>
 </mavlink>
